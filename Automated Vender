@@ -1,0 +1,27 @@
+menu = {
+  "Pizza":100,
+"Soda":40,
+"Popcorn":80,
+  "Egg Tart":150,
+  "Full ticket":200,
+  "Half ticket":100
+}
+print("Menu :\n")
+print(menu)
+print("\n")
+cart=[]
+total=[]
+while True : 
+  a=input("Enter the food\n")
+  if(a=="end") :
+    break
+  elif(menu.get(a.capitalize()) is None):
+     print("Not available")
+  else : 
+     cart.append(a.capitalize())
+     total.append(menu.get(a.capitalize()))
+sum=0
+for x in total :
+  sum=sum+x
+
+print(f"Total:{sum}")
