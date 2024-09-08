@@ -1,0 +1,84 @@
+#include <iostream>
+#include <vector>
+#include<string>
+using namespace std;
+int main() { 
+  int input;
+  int n=0;
+  vector<string>up;
+  vector<string>mid;
+  vector<string>down;
+  
+  while (1){
+    cin>>input;
+    
+    switch(input){
+      case 0:
+      up.push_back("--- ");
+      mid.push_back("| | ");
+      down.push_back("--- ");
+      case 1:
+      up.push_back("  | ");
+      mid.push_back("  | ");
+      down.push_back("  | ");
+      
+        case 2:
+        up.push_back("--- ");
+        mid.push_back(" /  ");
+        down.push_back("--- ");
+
+      case 3:
+      up.push_back("--- ");
+      mid.push_back("--| ");
+      down.push_back("--- ");
+      
+      case 4: 
+      up.push_back("| | ");
+      mid.push_back("--- ");
+      down.push_back("  | ");
+      case 5:
+      up.push_back("--- ");
+      mid.push_back("|-- ");
+      down.push_back("--| ");
+      case 6:
+      up.push_back("--- ");
+      mid.push_back("|-- ");
+      down.push_back("--| ");
+      case 7:
+      up.push_back("--- ");
+      mid.push_back("  | ");
+      down.push_back("  | ");
+      case 8:
+      up.push_back("--- ");
+      mid.push_back("|-| ");
+      down.push_back("--- ");
+      case 9:
+      up.push_back("|-- ");
+      mid.push_back("|-| ");
+      down.push_back("--| ");
+    }
+
+  if(input==-1){
+    break;
+  }  
+    else{
+      n++;
+    }
+    
+    
+  }
+  
+  for(int i=0;i<n;i++){
+    cout<<up[i];
+  }
+  cout<<"\n";
+  for(int i=0;i<n;i++){
+    cout<<mid[i];
+  }
+   cout<<"\n";
+  for(int i=0;i<n;i++){
+    cout<<down[i];
+  }
+  return 0;
+
+}
