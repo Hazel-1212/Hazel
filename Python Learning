@@ -1,0 +1,3 @@
+import math
+area=10*10*(math.pi)
+print("area={0:*>10d}".format(area))
