@@ -1,0 +1,13 @@
+num1={1,2,3}
+num2={1,2,4,5,6}
+num1.difference_update(num2)
+print(num1&num2)
+
+def address(worker1,worker2,worker3="Mary"):
+    print("worker1:{}".format(id(worker1)))
+    print("worker2:{}".format(id(worker2)))
+    print("worker3:{}".format(id(worker3)))
+
+w1=input("Name of employee {}".format(1));
+w2=input("Name of employee {}".format(1));
+address(w1,w2)

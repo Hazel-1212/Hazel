@@ -1,0 +1,11 @@
+#Tuple of *
+def scoreRecord(name,sex,*grade):
+    print(f"{name} {sex} :{grade}")
+scoreRecord("John Doe","Male",100,99)
+
+#Dict of **
+def scorerecord(year,**grade):
+    brochure={keys:values for keys,values in grade.items() if values>95}
+    print(brochure)
+    print(len(brochure))
+scorerecord(year="113-1 fall", compute=100, physics=99,logicdesign=94,calculus=98)

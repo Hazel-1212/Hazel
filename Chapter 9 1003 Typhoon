@@ -1,0 +1,12 @@
+import random
+
+a=[]
+a.append(1)
+a.append(1)
+i=2
+while(i<random.randint(10,20)) :
+    a.append(a[i-2]+a[i-1])
+    i=i+1
+
+print(a)
+
